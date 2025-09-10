@@ -167,7 +167,6 @@ def main(argv=None):
                     mapping[candidate] = 1
             if mapping:
                 columns.append((f"AV_{b}", mapping))
-        # ---------------------------------------------------------------------
 
         # Emit TSV matrix
         print("variable\t" + "\t".join(label for (label, _) in columns), file=out_stream)
